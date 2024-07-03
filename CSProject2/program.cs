@@ -19,6 +19,11 @@ namespace CSPractice2
             Parent p = child;
             Console.WriteLine(p.variable); // 출력: 273
 
+            // #6 23-8 오버라이딩
+            child2 child2 = new Child2();
+            child2.Method(); // 출력: 오버라이드 된 자식 메서드
+            ((Parent)child2).Method(); // 출력: 오버라이드 된 자식 메서드
+            
         }
 
     }
